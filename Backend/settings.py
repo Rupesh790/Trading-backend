@@ -31,7 +31,7 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
     "localhost",
-    "127.0.0.1",
+    "https://trading-backend-icm2.onrender.com",
     "https://indiatrade.online"
 ]
 
@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     'dj_rest_auth',
     'dj_rest_auth.registration',
     'rest_framework',
-
+    'brokers',
     'Users',
 ]
 
