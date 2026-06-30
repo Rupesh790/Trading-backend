@@ -31,9 +31,14 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = [
     "localhost",
-    "https://trading-backend-icm2.onrender.com",
-    "https://indiatrade.online"
+    "trading-backend-icm2.onrender.com",
+    "indiatrade.online"
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://trading-backend-icm2.onrender.com",
+    "https://indiatrade.online",
+]
+
 
 
 # Application definition
